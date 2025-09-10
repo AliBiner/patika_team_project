@@ -1,4 +1,7 @@
-package com.psf;
+package com.psf.domain;
+
+import com.psf.Gender;
+import com.psf.UserException;
 
 import java.time.LocalDateTime;
 
