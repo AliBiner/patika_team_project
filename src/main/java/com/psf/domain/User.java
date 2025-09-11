@@ -42,12 +42,9 @@ public class User {
     }
 
     public void setFirstName(String firstName) throws UserException {
-        if(firstName == null){
-            throw new UserException("İsim bulunamadı");
-        }
-        if(firstName.trim().isEmpty()){
-            throw new UserException("İsim boş olamaz");
-        }
+
+
+
         this.firstName = firstName;
 
     }
@@ -57,12 +54,7 @@ public class User {
     }
 
     public void setLastName(String lastName) throws UserException {
-        if(lastName == null){
-            throw new UserException("İsim bulunamadı");
-        }
-        if(lastName.trim().isEmpty()){
-            throw new UserException("İsim boş olamaz");
-        }
+
 
         this.lastName = lastName;
     }
@@ -94,12 +86,7 @@ public class User {
     }
 
     public void setEmail(String email) throws UserException {
-        if(email == null){
-            throw new UserException("Email bulunamadı");
-        }
-        if(email.trim().isEmpty()){
-            throw new UserException("Email boş olamaz");
-        }
+
         this.email = email;
     }
 
@@ -108,12 +95,7 @@ public class User {
     }
 
     public void setPassword(String password) throws UserException {
-        if(password == null){
-            throw new UserException("Şifre bulunamadı");
-        }
-        if(password.trim().isEmpty()){
-            throw new UserException("Şifre boş olamaz");
-        }
+
         this.password = password;
     }
 
