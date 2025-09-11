@@ -2,6 +2,7 @@ package com.psf.ui;
 
 import com.psf.UserException;
 import com.psf.domain.User;
+import com.psf.dto.SigninUserDto;
 
 import java.util.Locale;
 import java.util.Scanner;
@@ -35,14 +36,11 @@ public class UserUI {
             System.out.println(RED + "Invalid password format. Please enter a valid password." + RESET);
             password = scanner.next().trim();
         }
-        User user = new User(name,lastname,username,email,password);
-
-
-
-
-
-
-
+        SigninUserDto dto = new SigninUserDto();
+        dto.setFirstName(name);
+        dto.setLastName(lastname);
+        dto.setEmail(email);
+        dto.setPassword(password);
 
 
     }
