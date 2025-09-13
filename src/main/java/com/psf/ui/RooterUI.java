@@ -10,11 +10,11 @@ public class RooterUI {
             UserUI userUI = new UserUI();
             showMenu();
             String choice = s.next();
+            s.nextLine(); // clear scanner
             switch (choice){
                 case "1":
                     userUI.teacherPanel(s);
                     break;
-
                 case "2":
                     userUI.studentPanel();
                     break;
@@ -25,7 +25,6 @@ public class RooterUI {
                     System.out.println("Invalid Enter");
                     break;
             }
-
         }
     }
 

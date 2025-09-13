@@ -1,6 +1,7 @@
 package com.psf;
 
 import com.psf.domain.User;
+import com.psf.ui.RooterUI;
 import com.psf.ui.UserUI;
 
 import java.sql.Connection;
@@ -11,13 +12,12 @@ import java.util.Scanner;
 public class App {
 
     public static void main(String[] args) {
-        Scanner s = new Scanner(System.in);
-        UserUI userUI = new UserUI();
-        try {
-            userUI.teacherPanel(s);
-        } catch (UserException e) {
-            System.out.println(e.getMessage());
-        }
+//        Scanner s = new Scanner(System.in);
+//        UserUI userUI = new UserUI();
+//        userUI.teacherPanel(s);
+
+        RooterUI rooterUI = new RooterUI();
+        rooterUI.start();
     }
 //    public static void main(String[] args) throws UserException {
 //        Scanner sc = new Scanner(System.in);
