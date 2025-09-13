@@ -1,8 +1,8 @@
-package com.psf.dto;
+package com.psf.dto.Request;
 
-import java.time.LocalDateTime;
+import com.psf.dto.ResponseDto;
 
-public class SigninUserDto extends ResponseDto{
+public class SignInUserDto extends ResponseDto {
 
     //fazla parametre almayı ve yanlış tipte veri almayı engeller
 

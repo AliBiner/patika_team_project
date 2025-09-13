@@ -7,7 +7,7 @@ import java.time.LocalDateTime;
 
 public class User {
 
-    private int id;
+    private int id; //3
     private String firstName;
     private String middleName;
     private String lastName;
@@ -19,43 +19,27 @@ public class User {
     private boolean isActive;
     private Gender gender;
 
-    public User(String firstName,String lastName, String userName, String email, String password) throws UserException {
-        setFirstName(firstName);
-        setLastName(lastName);
-        setUserName(userName);
-        setEmail(email);
-        setPassword(password);
-    }
-
     public int getId() {
         return id;
     }
 
     public void setId(int id) {
-        if(this.id ==0){
-            this.id = id;
-        }
+        this.id = id;
     }
 
     public String getFirstName() {
         return firstName;
     }
 
-    public void setFirstName(String firstName) throws UserException {
-
-
-
+    public void setFirstName(String firstName) {
         this.firstName = firstName;
-
     }
 
     public String getLastName() {
         return lastName;
     }
 
-    public void setLastName(String lastName) throws UserException {
-
-
+    public void setLastName(String lastName) {
         this.lastName = lastName;
     }
 
@@ -71,13 +55,7 @@ public class User {
         return userName;
     }
 
-    public void setUserName(String userName) throws UserException {
-        if(userName == null){
-            throw new UserException("Soyisim bulunamadı");
-        }
-        if(userName.trim().isEmpty()){
-            throw new UserException("Soyisim boş olamaz");
-        }
+    public void setUserName(String userName) {
         this.userName = userName;
     }
 
@@ -85,8 +63,7 @@ public class User {
         return email;
     }
 
-    public void setEmail(String email) throws UserException {
-
+    public void setEmail(String email) {
         this.email = email;
     }
 
@@ -94,8 +71,7 @@ public class User {
         return password;
     }
 
-    public void setPassword(String password) throws UserException {
-
+    public void setPassword(String password)  {
         this.password = password;
     }
 
